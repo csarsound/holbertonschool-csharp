@@ -1,0 +1,12 @@
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/5-print_float/bin/Debug/netcoreapp3.1/5-print_float.deps.json
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/5-print_float/bin/Debug/netcoreapp3.1/5-print_float.runtimeconfig.json
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/5-print_float/bin/Debug/netcoreapp3.1/5-print_float.runtimeconfig.dev.json
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/5-print_float/bin/Debug/netcoreapp3.1/5-print_float.dll
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/5-print_float/bin/Debug/netcoreapp3.1/5-print_float.pdb
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/5-print_float/obj/Debug/netcoreapp3.1/5-print_float.csprojAssemblyReference.cache
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/5-print_float/obj/Debug/netcoreapp3.1/5-print_float.csproj.CoreCompileInputs.cache
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/5-print_float/obj/Debug/netcoreapp3.1/5-print_float.AssemblyInfoInputs.cache
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/5-print_float/obj/Debug/netcoreapp3.1/5-print_float.AssemblyInfo.cs
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/5-print_float/obj/Debug/netcoreapp3.1/5-print_float.dll
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/5-print_float/obj/Debug/netcoreapp3.1/5-print_float.pdb
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/5-print_float/obj/Debug/netcoreapp3.1/5-print_float.genruntimeconfig.cache
