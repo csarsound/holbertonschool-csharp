@@ -1,0 +1,12 @@
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/7-concat/bin/Debug/netcoreapp3.1/7-concat.deps.json
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/7-concat/bin/Debug/netcoreapp3.1/7-concat.runtimeconfig.json
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/7-concat/bin/Debug/netcoreapp3.1/7-concat.runtimeconfig.dev.json
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/7-concat/bin/Debug/netcoreapp3.1/7-concat.dll
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/7-concat/bin/Debug/netcoreapp3.1/7-concat.pdb
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/7-concat/obj/Debug/netcoreapp3.1/7-concat.csprojAssemblyReference.cache
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/7-concat/obj/Debug/netcoreapp3.1/7-concat.csproj.CoreCompileInputs.cache
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/7-concat/obj/Debug/netcoreapp3.1/7-concat.AssemblyInfoInputs.cache
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/7-concat/obj/Debug/netcoreapp3.1/7-concat.AssemblyInfo.cs
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/7-concat/obj/Debug/netcoreapp3.1/7-concat.dll
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/7-concat/obj/Debug/netcoreapp3.1/7-concat.pdb
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/7-concat/obj/Debug/netcoreapp3.1/7-concat.genruntimeconfig.cache

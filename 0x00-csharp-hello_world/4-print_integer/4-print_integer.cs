@@ -1,6 +1,6 @@
 ﻿using System;
 
-class Program
+class _4_print_integer
 {
 	static void Main(string[] args)
 	{
