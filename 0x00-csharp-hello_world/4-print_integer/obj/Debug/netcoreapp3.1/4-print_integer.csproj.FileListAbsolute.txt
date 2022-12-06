@@ -1,0 +1,12 @@
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/4-print_integer/bin/Debug/netcoreapp3.1/4-print_integer.deps.json
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/4-print_integer/bin/Debug/netcoreapp3.1/4-print_integer.runtimeconfig.json
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/4-print_integer/bin/Debug/netcoreapp3.1/4-print_integer.runtimeconfig.dev.json
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/4-print_integer/bin/Debug/netcoreapp3.1/4-print_integer.dll
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/4-print_integer/bin/Debug/netcoreapp3.1/4-print_integer.pdb
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/4-print_integer/obj/Debug/netcoreapp3.1/4-print_integer.csprojAssemblyReference.cache
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/4-print_integer/obj/Debug/netcoreapp3.1/4-print_integer.csproj.CoreCompileInputs.cache
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/4-print_integer/obj/Debug/netcoreapp3.1/4-print_integer.AssemblyInfoInputs.cache
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/4-print_integer/obj/Debug/netcoreapp3.1/4-print_integer.AssemblyInfo.cs
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/4-print_integer/obj/Debug/netcoreapp3.1/4-print_integer.dll
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/4-print_integer/obj/Debug/netcoreapp3.1/4-print_integer.pdb
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x00-csharp-hello_world/4-print_integer/obj/Debug/netcoreapp3.1/4-print_integer.genruntimeconfig.cache
