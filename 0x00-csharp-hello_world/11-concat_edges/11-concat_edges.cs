@@ -2,14 +2,10 @@ using System;
 
 class Program
 {
-    static void Main(string[] args)
-    {
-        string word = "Holberton";
-        var word_first_3 = word.Substring(0, 3);
-        var word_last_2 = word.Substring(word.Length - 2, 2);
-        var middle_word = word.Substring(1, word.Length - 2);
-        Console.WriteLine("First 3 letters: {0}", word_first_3);
-        Console.WriteLine("Last 2 letters: {0}", word_last_2);
-        Console.WriteLine("Middle word: {0}", middle_word);
-    }
+	static void Main(string[] args)
+	{
+		string str = "C# (pronounced \"See Sharp\") is a simple, modern, object-oriented, and type-safe programming language. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers.";
+		str = str.Substring(49, 15) + ' ' + str.Substring(80, 11) + ' ' + str.Substring(88, 2) + ' ' +str.Substring(0, 2);
+		Console.WriteLine(str);
+	}
 }
