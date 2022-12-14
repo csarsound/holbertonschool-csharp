@@ -5,19 +5,19 @@ class List
 {
     public static int SafePrint(List<int> myList, int n)
     {
-        int i = 0;
+        int i, j = 0;
+
         try
         {
-            while (i < n)
+            for (i = 0; i < n; i++)
             {
                 Console.WriteLine(myList[i]);
-                i++;
+                j = i + 1;
             }
         }
-        catch (Exception)
+        catch
         {
-
         }
-        return i;
+    return j;
     }
 }
