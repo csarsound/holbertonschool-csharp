@@ -1,0 +1,4 @@
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x04-csharp-exceptions/0-safe_list_print/obj/Debug/netcoreapp2.1/0-safe_list_print.csprojAssemblyReference.cache
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x04-csharp-exceptions/0-safe_list_print/obj/Debug/netcoreapp2.1/0-safe_list_print.csproj.CoreCompileInputs.cache
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x04-csharp-exceptions/0-safe_list_print/obj/Debug/netcoreapp2.1/0-safe_list_print.AssemblyInfoInputs.cache
+/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x04-csharp-exceptions/0-safe_list_print/obj/Debug/netcoreapp2.1/0-safe_list_print.AssemblyInfo.cs

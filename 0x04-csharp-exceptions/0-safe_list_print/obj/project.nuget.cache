@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "CEUeCvD5TrGS1yuCaURs81qRgg523ZtuFz4KED7P3/EaGsD3qbw79YtYzn27ZT2M+1+emP9SpL52vHW+wDT2lw==",
+  "dgSpecHash": "aS/7NZVZgD+j/uy2vu1XWxn4wlnuI6/gnC8YZfRZ4iLcNf573ed4MRmr2BQH87PawnWr3yeBgLiEfOQ3RC0BXQ==",
   "success": true,
   "projectFilePath": "/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x04-csharp-exceptions/0-safe_list_print/0-safe_list_print.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/mac/.nuget/packages/microsoft.netcore.app/2.1.0/microsoft.netcore.app.2.1.0.nupkg.sha512",
+    "/Users/mac/.nuget/packages/microsoft.netcore.dotnetapphost/2.1.0/microsoft.netcore.dotnetapphost.2.1.0.nupkg.sha512",
+    "/Users/mac/.nuget/packages/microsoft.netcore.dotnethostpolicy/2.1.0/microsoft.netcore.dotnethostpolicy.2.1.0.nupkg.sha512",
+    "/Users/mac/.nuget/packages/microsoft.netcore.dotnethostresolver/2.1.0/microsoft.netcore.dotnethostresolver.2.1.0.nupkg.sha512",
+    "/Users/mac/.nuget/packages/microsoft.netcore.platforms/2.1.0/microsoft.netcore.platforms.2.1.0.nupkg.sha512",
+    "/Users/mac/.nuget/packages/microsoft.netcore.targets/2.1.0/microsoft.netcore.targets.2.1.0.nupkg.sha512",
+    "/Users/mac/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
