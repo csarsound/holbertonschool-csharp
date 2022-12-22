@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <RootNamespace>_15_square_matrix</RootNamespace>
+    <RootNamespace>_100_jagged_array</RootNamespace>
   </PropertyGroup>
 
 </Project>
