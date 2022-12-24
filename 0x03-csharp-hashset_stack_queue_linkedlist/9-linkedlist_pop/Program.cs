@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _8_linkedlist_find
+namespace _9_linkedlist_pop
 {
     class Program
     {

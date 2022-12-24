@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x03-csharp-hashset_stack_queue_linkedlist/8-linkedlist_find/8-linkedlist_find.csproj": {}
+    "/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x03-csharp-hashset_stack_queue_linkedlist/9-linkedlist_pop/9-linkedlist_pop.csproj": {}
   },
   "projects": {
-    "/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x03-csharp-hashset_stack_queue_linkedlist/8-linkedlist_find/8-linkedlist_find.csproj": {
+    "/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x03-csharp-hashset_stack_queue_linkedlist/9-linkedlist_pop/9-linkedlist_pop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x03-csharp-hashset_stack_queue_linkedlist/8-linkedlist_find/8-linkedlist_find.csproj",
-        "projectName": "8-linkedlist_find",
-        "projectPath": "/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x03-csharp-hashset_stack_queue_linkedlist/8-linkedlist_find/8-linkedlist_find.csproj",
+        "projectUniqueName": "/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x03-csharp-hashset_stack_queue_linkedlist/9-linkedlist_pop/9-linkedlist_pop.csproj",
+        "projectName": "9-linkedlist_pop",
+        "projectPath": "/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x03-csharp-hashset_stack_queue_linkedlist/9-linkedlist_pop/9-linkedlist_pop.csproj",
         "packagesPath": "/Users/mac/.nuget/packages/",
-        "outputPath": "/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x03-csharp-hashset_stack_queue_linkedlist/8-linkedlist_find/obj/",
+        "outputPath": "/Users/mac/Documents/Holberton Files/holbertonschool-csharp/0x03-csharp-hashset_stack_queue_linkedlist/9-linkedlist_pop/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mac/.nuget/NuGet/NuGet.Config"
