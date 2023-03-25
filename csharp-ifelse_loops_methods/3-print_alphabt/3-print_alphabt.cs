@@ -6,7 +6,7 @@ namespace _3_print_alphabt
     {
         static void Main(string[] args)
         {
-            for (byte i == 97; i < 123; i++)
+            for (byte i = 97; i < 123; i++)
             {
                 if (i != 113 && i != 101)
                 {
