@@ -8,7 +8,7 @@ namespace _1_last_digit
         {
             Random rndm = new Random();
             int number = rndm.Next(-10000, 10000);
-            int lastdigit = (number % 10)
+            int lastdigit = (number % 10);
             if (lastdigit > 5)
             {
                 Console.WriteLine($"The last digit of {number} is {lastdigit} and is greater than 5");
