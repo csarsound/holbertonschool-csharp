@@ -7,7 +7,7 @@ namespace _0_positive_or_negative
         static void Main(string[] args)
         {
             Random rndm = new Random();
-            int number = rndm.Next(-10 , 10);
+            int number = rndm.Next(-10, 10);
             if (number > 0 )
             {
                 Console.WriteLine($"{number} is positive");
@@ -18,7 +18,7 @@ namespace _0_positive_or_negative
             }
             else
             {
-                Console.WriteLine($"{number} is negative")
+                Console.WriteLine($"{number} is negative");
             }
         }
     }
