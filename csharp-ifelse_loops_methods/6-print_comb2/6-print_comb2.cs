@@ -21,6 +21,7 @@ namespace _6_print_comb2
                     }
                 }
             }
+            Console.WriteLine();
         }
     }
 }
