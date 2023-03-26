@@ -1,0 +1,57 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-ifelse_loops_methods/11-print_diagonal/11-print_diagonal.csproj": {}
+  },
+  "projects": {
+    "/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-ifelse_loops_methods/11-print_diagonal/11-print_diagonal.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-ifelse_loops_methods/11-print_diagonal/11-print_diagonal.csproj",
+        "projectName": "11-print_diagonal",
+        "projectPath": "/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-ifelse_loops_methods/11-print_diagonal/11-print_diagonal.csproj",
+        "packagesPath": "/Users/cesardanielmartinezsandino/.nuget/packages/",
+        "outputPath": "/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-ifelse_loops_methods/11-print_diagonal/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/cesardanielmartinezsandino/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
