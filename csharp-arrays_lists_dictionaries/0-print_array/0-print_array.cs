@@ -14,7 +14,7 @@ namespace _0_print_array
                 return (null);
             }
 
-            newArray = new int{size};
+            newArray = new int[size];
 
             for (int i = 0; i < size; i++)
             {
