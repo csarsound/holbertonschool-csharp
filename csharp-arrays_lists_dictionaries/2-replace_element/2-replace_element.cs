@@ -1,7 +1,5 @@
 ﻿using System;
 
-namespace _2_replace_element
-{
     class Array
     {
         public static int[] ReplaceElement(int[] array, int index, int n)
@@ -24,4 +22,3 @@ namespace _2_replace_element
             return (newArray);
         }
     }
-}
