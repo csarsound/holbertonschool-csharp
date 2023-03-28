@@ -5,14 +5,14 @@ using System.Collections.Generic;
     {
         public static List<int> CreatePrint(int size)
         {
-            if ( size < 0 )
+            if (size < 0)
             {
                 Console.WriteLine("Size cannot be negative");
                 return null;
             }
 
             List<int> newList = new List<int>();
-            if ( size == 0 )
+            if (size == 0)
             {
                 Console.WriteLine("");
             }
@@ -22,9 +22,10 @@ using System.Collections.Generic;
                 {
                     newList.Add(pos);
                     Console.Write(newList[pos]);
-                    if ( pos < size - 1 ) { Console.Write(" "); }
+                    if (pos < size - 1) {Console.Write(" ");}
                 }
                 Console.WriteLine("");
             }
+            return newList;
         }
     }
