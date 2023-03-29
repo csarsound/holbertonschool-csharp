@@ -8,7 +8,7 @@ class Dictionary
         List<string> newList = new List<string>();
         foreach (KeyValuePair<string, string> pair in myDict)
         {
-            newList.Add(pair.key.ToString() + ": " + pair.Value.ToString());
+            newList.Add(pair.Key.ToString() + ": " + pair.Value.ToString());
         }
         newList.Sort();
         foreach (string valueDic in newList)
