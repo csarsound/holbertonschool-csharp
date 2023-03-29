@@ -8,7 +8,7 @@ using System.Collections.Generic;
             int countKeys = 0;
             foreach (keyValuePairs<string, string> pair in myDict)
             {
-                countKeys++
+                countKeys++;
             }
             return countKeys;
         }
