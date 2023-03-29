@@ -3,13 +3,16 @@ using System.Collections.Generic;
 
 class Dictionary
 {
-    public static int NumberOfKeys(Dictionary<string, string> myDict)
+    public static Dictionary<string, string> AddKeyValue(Dictionary<string, string> myDict, string key, string value)
     {
-        int countKeys = 0;
-        foreach (keyValuePair<string, string> pair in myDict)
+        if (myDict.ContainsKey(key))
         {
-            CountKeys++;
+            myDict[key] = value;
         }
-        return countKeys;
+        else
+        {
+            myDict.Add(key, value);
+        }
+        return myDict;
     }
 }
