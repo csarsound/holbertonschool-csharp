@@ -1,13 +1,16 @@
-﻿using System;
+﻿
+
+using System;
+using System.Linq;
 using System.Collections.Generic;
 
 class Dictionary
 {
-    public static void BestScore(Dictionary<string, int> myList)
+    public static string BestScore(Dictionary<string, int> myList)
     {
         KeyValuePair<string, int> bestScore;
-
-        if (myList.count == 0 || myList == null)
+        
+        if (myList.Count == 0 || myList == null)
             return ("None");
 
         bestScore = myList.First();
@@ -18,6 +21,7 @@ class Dictionary
                 bestScore = element;
             }
         }
+
         return (bestScore.Key);
     }
 }
