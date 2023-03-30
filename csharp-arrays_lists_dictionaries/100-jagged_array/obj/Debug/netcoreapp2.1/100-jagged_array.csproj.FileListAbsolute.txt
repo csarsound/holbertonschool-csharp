@@ -1,0 +1,11 @@
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-arrays_lists_dictionaries/100-jagged_array/obj/Debug/netcoreapp2.1/100-jagged_array.csprojAssemblyReference.cache
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-arrays_lists_dictionaries/100-jagged_array/obj/Debug/netcoreapp2.1/100-jagged_array.csproj.CoreCompileInputs.cache
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-arrays_lists_dictionaries/100-jagged_array/obj/Debug/netcoreapp2.1/100-jagged_array.AssemblyInfoInputs.cache
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-arrays_lists_dictionaries/100-jagged_array/obj/Debug/netcoreapp2.1/100-jagged_array.AssemblyInfo.cs
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-arrays_lists_dictionaries/100-jagged_array/bin/Debug/netcoreapp2.1/100-jagged_array.deps.json
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-arrays_lists_dictionaries/100-jagged_array/bin/Debug/netcoreapp2.1/100-jagged_array.runtimeconfig.json
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-arrays_lists_dictionaries/100-jagged_array/bin/Debug/netcoreapp2.1/100-jagged_array.runtimeconfig.dev.json
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-arrays_lists_dictionaries/100-jagged_array/bin/Debug/netcoreapp2.1/100-jagged_array.dll
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-arrays_lists_dictionaries/100-jagged_array/bin/Debug/netcoreapp2.1/100-jagged_array.pdb
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-arrays_lists_dictionaries/100-jagged_array/obj/Debug/netcoreapp2.1/100-jagged_array.dll
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-arrays_lists_dictionaries/100-jagged_array/obj/Debug/netcoreapp2.1/100-jagged_array.pdb
