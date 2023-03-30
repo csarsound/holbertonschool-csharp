@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using.Linq;
+using System.Linq;
 
 class List
 {
