@@ -4,7 +4,7 @@ using System.Linq;
 
 class List
 {
-    public static int Sum(List<int> myList.Distinct())
+    public static int Sum(List<int> myList)
     {
         int sum = 0;
 
