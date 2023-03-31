@@ -8,7 +8,7 @@ class List
     {
         int sum = 0;
 
-        foreach (var element in my List.Distinct())
+        foreach (var element in myList.Distinct())
         {
             sum = sum + element;
         }
