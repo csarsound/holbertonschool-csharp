@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collection.Generic;
+using System.Collections.Generic;
 
 class MyStack
 {
@@ -16,10 +16,11 @@ class MyStack
 
         // Print if aStack contains a given item search
         bool contains = aStack.Contains(search);
+
         Console.WriteLine("Stack contains \"{0}\": {1}", search, contains);
 
         // If aStack contains the given item search, remove all items up to and
-        // including search; otherwise, leave aStack as is
+	// including search; otherwise, leave aStack as is
         Stack<string> newStack = new Stack<string>(aStack);
 
         if (aStack.Contains(search))
@@ -30,10 +31,11 @@ class MyStack
                     break;
             }
         }
+
         // Add a new given item newItem to aStack
         aStack.Push(newItem);
-
-        // Return aStack
+        
+	// Return aStack
         return(aStack);
     }
 }
