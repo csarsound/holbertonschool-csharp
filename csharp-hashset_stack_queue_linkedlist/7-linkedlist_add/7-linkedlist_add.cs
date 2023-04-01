@@ -7,7 +7,7 @@ class LList
     {
         LinkedListNode<int> newNode = new LinkedListNode<int>(n);
 
-        myLList.addFirst(newNode);
+        myLList.AddFirst(newNode);
 
         return (newNode);
     }
