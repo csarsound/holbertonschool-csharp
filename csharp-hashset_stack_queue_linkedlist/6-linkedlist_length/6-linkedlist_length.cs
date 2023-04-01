@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collection.Generic;
+﻿using System.Collections.Generic;
 
 class LList
 {
-    public static int Lenght(LinkedList<int> myLList)
+    public static int Length(LinkedList<int> myLList)
     {
         int numberElements = 0;
 
