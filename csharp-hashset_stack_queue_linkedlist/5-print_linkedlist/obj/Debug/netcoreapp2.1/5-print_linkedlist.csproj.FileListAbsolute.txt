@@ -1,0 +1,11 @@
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-hashset_stack_queue_linkedlist/5-print_linkedlist/bin/Debug/netcoreapp2.1/5-print_linkedlist.deps.json
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-hashset_stack_queue_linkedlist/5-print_linkedlist/bin/Debug/netcoreapp2.1/5-print_linkedlist.runtimeconfig.json
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-hashset_stack_queue_linkedlist/5-print_linkedlist/bin/Debug/netcoreapp2.1/5-print_linkedlist.runtimeconfig.dev.json
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-hashset_stack_queue_linkedlist/5-print_linkedlist/bin/Debug/netcoreapp2.1/5-print_linkedlist.dll
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-hashset_stack_queue_linkedlist/5-print_linkedlist/bin/Debug/netcoreapp2.1/5-print_linkedlist.pdb
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-hashset_stack_queue_linkedlist/5-print_linkedlist/obj/Debug/netcoreapp2.1/5-print_linkedlist.csprojAssemblyReference.cache
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-hashset_stack_queue_linkedlist/5-print_linkedlist/obj/Debug/netcoreapp2.1/5-print_linkedlist.csproj.CoreCompileInputs.cache
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-hashset_stack_queue_linkedlist/5-print_linkedlist/obj/Debug/netcoreapp2.1/5-print_linkedlist.AssemblyInfoInputs.cache
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-hashset_stack_queue_linkedlist/5-print_linkedlist/obj/Debug/netcoreapp2.1/5-print_linkedlist.AssemblyInfo.cs
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-hashset_stack_queue_linkedlist/5-print_linkedlist/obj/Debug/netcoreapp2.1/5-print_linkedlist.dll
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-hashset_stack_queue_linkedlist/5-print_linkedlist/obj/Debug/netcoreapp2.1/5-print_linkedlist.pdb
