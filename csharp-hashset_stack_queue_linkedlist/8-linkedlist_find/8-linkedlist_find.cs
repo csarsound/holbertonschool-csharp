@@ -2,7 +2,7 @@
 
 class LList
 {
-    public static int FindNode(LinkedList<int> myList, int value)
+    public static int FindNode(LinkedList<int> myLList, int value)
     {
         int index = 0;
 
@@ -16,6 +16,7 @@ class LList
 
             index++;
         }
+
         return (index);
     }
 }
