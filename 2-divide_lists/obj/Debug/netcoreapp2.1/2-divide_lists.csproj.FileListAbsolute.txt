@@ -1,0 +1,11 @@
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/2-divide_lists/obj/Debug/netcoreapp2.1/2-divide_lists.csprojAssemblyReference.cache
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/2-divide_lists/obj/Debug/netcoreapp2.1/2-divide_lists.csproj.CoreCompileInputs.cache
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/2-divide_lists/obj/Debug/netcoreapp2.1/2-divide_lists.AssemblyInfoInputs.cache
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/2-divide_lists/obj/Debug/netcoreapp2.1/2-divide_lists.AssemblyInfo.cs
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/2-divide_lists/bin/Debug/netcoreapp2.1/2-divide_lists.deps.json
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/2-divide_lists/bin/Debug/netcoreapp2.1/2-divide_lists.runtimeconfig.json
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/2-divide_lists/bin/Debug/netcoreapp2.1/2-divide_lists.runtimeconfig.dev.json
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/2-divide_lists/bin/Debug/netcoreapp2.1/2-divide_lists.dll
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/2-divide_lists/bin/Debug/netcoreapp2.1/2-divide_lists.pdb
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/2-divide_lists/obj/Debug/netcoreapp2.1/2-divide_lists.dll
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/2-divide_lists/obj/Debug/netcoreapp2.1/2-divide_lists.pdb
