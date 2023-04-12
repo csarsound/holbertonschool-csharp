@@ -1,0 +1,11 @@
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/1-divide_print/obj/Debug/netcoreapp2.1/1-divide_print.csprojAssemblyReference.cache
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/1-divide_print/obj/Debug/netcoreapp2.1/1-divide_print.csproj.CoreCompileInputs.cache
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/1-divide_print/obj/Debug/netcoreapp2.1/1-divide_print.AssemblyInfoInputs.cache
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/1-divide_print/obj/Debug/netcoreapp2.1/1-divide_print.AssemblyInfo.cs
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/1-divide_print/bin/Debug/netcoreapp2.1/1-divide_print.deps.json
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/1-divide_print/bin/Debug/netcoreapp2.1/1-divide_print.runtimeconfig.json
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/1-divide_print/bin/Debug/netcoreapp2.1/1-divide_print.runtimeconfig.dev.json
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/1-divide_print/bin/Debug/netcoreapp2.1/1-divide_print.dll
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/1-divide_print/bin/Debug/netcoreapp2.1/1-divide_print.pdb
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/1-divide_print/obj/Debug/netcoreapp2.1/1-divide_print.dll
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/1-divide_print/obj/Debug/netcoreapp2.1/1-divide_print.pdb
