@@ -1,0 +1,11 @@
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-exceptions/4-throw_exception_msg/obj/Debug/netcoreapp2.1/4-throw_exception_msg.csprojAssemblyReference.cache
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-exceptions/4-throw_exception_msg/obj/Debug/netcoreapp2.1/4-throw_exception_msg.csproj.CoreCompileInputs.cache
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-exceptions/4-throw_exception_msg/obj/Debug/netcoreapp2.1/4-throw_exception_msg.AssemblyInfoInputs.cache
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-exceptions/4-throw_exception_msg/obj/Debug/netcoreapp2.1/4-throw_exception_msg.AssemblyInfo.cs
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-exceptions/4-throw_exception_msg/bin/Debug/netcoreapp2.1/4-throw_exception_msg.deps.json
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-exceptions/4-throw_exception_msg/bin/Debug/netcoreapp2.1/4-throw_exception_msg.runtimeconfig.json
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-exceptions/4-throw_exception_msg/bin/Debug/netcoreapp2.1/4-throw_exception_msg.runtimeconfig.dev.json
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-exceptions/4-throw_exception_msg/bin/Debug/netcoreapp2.1/4-throw_exception_msg.dll
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-exceptions/4-throw_exception_msg/bin/Debug/netcoreapp2.1/4-throw_exception_msg.pdb
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-exceptions/4-throw_exception_msg/obj/Debug/netcoreapp2.1/4-throw_exception_msg.dll
+/Users/cesardanielmartinezsandino/Documents/HolbertonSchool/holbertonschool-csharp/csharp-exceptions/4-throw_exception_msg/obj/Debug/netcoreapp2.1/4-throw_exception_msg.pdb
