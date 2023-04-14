@@ -2,5 +2,5 @@
 {
     Good,
     Great,
-    Excelent
+    Excellent
 }
