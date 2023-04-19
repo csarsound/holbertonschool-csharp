@@ -1,27 +1,25 @@
-﻿public enum Rating
-{
+public enum Rating{
     Good,
     Great,
     Excellent
 }
 
-public struct Dog
+public struct Dog{
+public string name;
+public float age;
+public string owner;
+public Rating rating;
+
+public Dog(string n, float a, string o, Rating r){
+    name = n;
+    age = a;
+    owner = o;
+    rating = r;
+}
+
+public override string ToString()
 {
-    public string name;
-    public float age;
-    public string owner;
-    public Rating rating;
-
-    public Dog(string name, float age, string owner, Rating rating)
-    {
-        this.name = name;
-        this.age = age;
-        this.owner = owner;
-        this.rating = rating;
-    }
-
-    public override string ToString()
-    {
-        return ($"Dog name: {this.name}\nAge: {this.age}\nOwner: {this.owner}\nRating: {this.rating}");
-    }
+    return 
+    $"Dog Name: {this.name}\nAge: {this.age.ToString()}\nOwner: {this.owner}\nRating: {this.rating.ToString()}";
+}
 }
