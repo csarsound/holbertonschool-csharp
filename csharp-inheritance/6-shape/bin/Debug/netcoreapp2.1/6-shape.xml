@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>6-shape</name>
+    </assembly>
+    <members>
+        <member name="T:Shape">
+            <summary>Write a class Shape</summary>
+        </member>
+        <member name="M:Shape.Area">
+            <summary>Throws an NotImplementedException with the message Area() is not implemented</summary>
+        </member>
+        <member name="T:Rectangle">
+            <summary>Rectangle class that inherits from shape base class.</summary>
+        </member>
+        <member name="P:Rectangle.Width">
+            <summary>Represents the width of the Rectangle.</summary>
+        </member>
+        <member name="P:Rectangle.Height">
+            <summary>Represents the height of the Rectangle.</summary>
+        </member>
+    </members>
+</doc>
