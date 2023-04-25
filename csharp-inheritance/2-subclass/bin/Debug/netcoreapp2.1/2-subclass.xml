@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>2-subclass</name>
+    </assembly>
+    <members>
+        <member name="T:Obj">
+            <summary>Provides some methods to work with Obj</summary>
+        </member>
+        <member name="M:Obj.IsOnlyASubclass(System.Type,System.Type)">
+            <summary>Write a method that print true Only subclass</summary>
+        </member>
+    </members>
+</doc>

@@ -3,9 +3,9 @@
 /// <summary>Provides some methods to work with Obj</summary>
 class Obj
 {
-    /// <summary>Write a method that print true Only subclass
+    /// <summary>Write a method that print true Only subclass</summary>
     public static bool IsOnlyASubclass(Type derivedType, Type baseType)
     {
-        return derivedType.IsSubcclassof(baseType);
+        return derivedType.IsSubclassOf(baseType);
     }
 }

@@ -1,0 +1,12 @@
+/Users/csar/Documents/holbertonschool-csharp/csharp-inheritance/2-subclass/obj/Debug/netcoreapp2.1/2-subclass.csprojAssemblyReference.cache
+/Users/csar/Documents/holbertonschool-csharp/csharp-inheritance/2-subclass/obj/Debug/netcoreapp2.1/2-subclass.csproj.CoreCompileInputs.cache
+/Users/csar/Documents/holbertonschool-csharp/csharp-inheritance/2-subclass/obj/Debug/netcoreapp2.1/2-subclass.AssemblyInfoInputs.cache
+/Users/csar/Documents/holbertonschool-csharp/csharp-inheritance/2-subclass/obj/Debug/netcoreapp2.1/2-subclass.AssemblyInfo.cs
+/Users/csar/Documents/holbertonschool-csharp/csharp-inheritance/2-subclass/bin/Debug/netcoreapp2.1/2-subclass.xml
+/Users/csar/Documents/holbertonschool-csharp/csharp-inheritance/2-subclass/bin/Debug/netcoreapp2.1/2-subclass.deps.json
+/Users/csar/Documents/holbertonschool-csharp/csharp-inheritance/2-subclass/bin/Debug/netcoreapp2.1/2-subclass.runtimeconfig.json
+/Users/csar/Documents/holbertonschool-csharp/csharp-inheritance/2-subclass/bin/Debug/netcoreapp2.1/2-subclass.runtimeconfig.dev.json
+/Users/csar/Documents/holbertonschool-csharp/csharp-inheritance/2-subclass/bin/Debug/netcoreapp2.1/2-subclass.dll
+/Users/csar/Documents/holbertonschool-csharp/csharp-inheritance/2-subclass/bin/Debug/netcoreapp2.1/2-subclass.pdb
+/Users/csar/Documents/holbertonschool-csharp/csharp-inheritance/2-subclass/obj/Debug/netcoreapp2.1/2-subclass.dll
+/Users/csar/Documents/holbertonschool-csharp/csharp-inheritance/2-subclass/obj/Debug/netcoreapp2.1/2-subclass.pdb
