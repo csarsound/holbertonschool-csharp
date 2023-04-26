@@ -1,0 +1,12 @@
+/Users/csar/Documents/holbertonschool-csharp/csharp-inheritance/9-shape/bin/Debug/netcoreapp2.1/9-shape.xml
+/Users/csar/Documents/holbertonschool-csharp/csharp-inheritance/9-shape/bin/Debug/netcoreapp2.1/9-shape.deps.json
+/Users/csar/Documents/holbertonschool-csharp/csharp-inheritance/9-shape/bin/Debug/netcoreapp2.1/9-shape.runtimeconfig.json
+/Users/csar/Documents/holbertonschool-csharp/csharp-inheritance/9-shape/bin/Debug/netcoreapp2.1/9-shape.runtimeconfig.dev.json
+/Users/csar/Documents/holbertonschool-csharp/csharp-inheritance/9-shape/bin/Debug/netcoreapp2.1/9-shape.dll
+/Users/csar/Documents/holbertonschool-csharp/csharp-inheritance/9-shape/bin/Debug/netcoreapp2.1/9-shape.pdb
+/Users/csar/Documents/holbertonschool-csharp/csharp-inheritance/9-shape/obj/Debug/netcoreapp2.1/9-shape.csprojAssemblyReference.cache
+/Users/csar/Documents/holbertonschool-csharp/csharp-inheritance/9-shape/obj/Debug/netcoreapp2.1/9-shape.csproj.CoreCompileInputs.cache
+/Users/csar/Documents/holbertonschool-csharp/csharp-inheritance/9-shape/obj/Debug/netcoreapp2.1/9-shape.AssemblyInfoInputs.cache
+/Users/csar/Documents/holbertonschool-csharp/csharp-inheritance/9-shape/obj/Debug/netcoreapp2.1/9-shape.AssemblyInfo.cs
+/Users/csar/Documents/holbertonschool-csharp/csharp-inheritance/9-shape/obj/Debug/netcoreapp2.1/9-shape.dll
+/Users/csar/Documents/holbertonschool-csharp/csharp-inheritance/9-shape/obj/Debug/netcoreapp2.1/9-shape.pdb
