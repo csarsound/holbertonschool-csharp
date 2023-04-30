@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>5-enemy</name>
+    </assembly>
+    <members>
+        <member name="T:Enemies.Zombie">
+            <summary>Create an empty public class Zombie within Enemies that defines a zombie</summary>
+        </member>
+        <member name="F:Enemies.Zombie.health">
+            <summary>Int that represents the value of the Zombie health</summary>
+        </member>
+        <member name="F:Enemies.Zombie.name">
+            <summary>Private field that sould be a string</summary>
+        </member>
+        <member name="P:Enemies.Zombie.Name">
+            <summary>String that represents the name of the Zombie</summary>
+        </member>
+        <member name="M:Enemies.Zombie.#ctor">
+            <summary>Initializes a new instance of the <see cref="T:Enemies.Zombie"/>class.</summary>
+        </member>
+        <member name="M:Enemies.Zombie.#ctor(System.Int32)">
+            <summary>Initializes a new instance of the <see cref="T:Enemies.Zombie"/>class that value must be greater than or equal to 0</summary>
+        </member>
+        <member name="M:Enemies.Zombie.GetHealth">
+            <summary>public method that return the health of the Zombie object</summary>
+        </member>
+        <member name="M:Enemies.Zombie.ToString">
+            <summary>public .toString() that print the Zombie object´s attributes to stdout</summary>
+        </member>
+    </members>
+</doc>
