@@ -1,0 +1,12 @@
+/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-classes/2-enemy/bin/Debug/netcoreapp2.1/2-enemy.xml
+/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-classes/2-enemy/bin/Debug/netcoreapp2.1/2-enemy.deps.json
+/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-classes/2-enemy/bin/Debug/netcoreapp2.1/2-enemy.runtimeconfig.json
+/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-classes/2-enemy/bin/Debug/netcoreapp2.1/2-enemy.runtimeconfig.dev.json
+/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-classes/2-enemy/bin/Debug/netcoreapp2.1/2-enemy.dll
+/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-classes/2-enemy/bin/Debug/netcoreapp2.1/2-enemy.pdb
+/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-classes/2-enemy/obj/Debug/netcoreapp2.1/2-enemy.csprojAssemblyReference.cache
+/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-classes/2-enemy/obj/Debug/netcoreapp2.1/2-enemy.csproj.CoreCompileInputs.cache
+/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-classes/2-enemy/obj/Debug/netcoreapp2.1/2-enemy.AssemblyInfoInputs.cache
+/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-classes/2-enemy/obj/Debug/netcoreapp2.1/2-enemy.AssemblyInfo.cs
+/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-classes/2-enemy/obj/Debug/netcoreapp2.1/2-enemy.dll
+/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-classes/2-enemy/obj/Debug/netcoreapp2.1/2-enemy.pdb
