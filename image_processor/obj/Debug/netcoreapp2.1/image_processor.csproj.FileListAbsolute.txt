@@ -1,0 +1,12 @@
+/Users/csar/Documents/Holberton/holbertonschool-csharp/image_processor/bin/Debug/netcoreapp2.1/image_processor.xml
+/Users/csar/Documents/Holberton/holbertonschool-csharp/image_processor/bin/Debug/netcoreapp2.1/image_processor.deps.json
+/Users/csar/Documents/Holberton/holbertonschool-csharp/image_processor/bin/Debug/netcoreapp2.1/image_processor.runtimeconfig.json
+/Users/csar/Documents/Holberton/holbertonschool-csharp/image_processor/bin/Debug/netcoreapp2.1/image_processor.runtimeconfig.dev.json
+/Users/csar/Documents/Holberton/holbertonschool-csharp/image_processor/bin/Debug/netcoreapp2.1/image_processor.dll
+/Users/csar/Documents/Holberton/holbertonschool-csharp/image_processor/bin/Debug/netcoreapp2.1/image_processor.pdb
+/Users/csar/Documents/Holberton/holbertonschool-csharp/image_processor/obj/Debug/netcoreapp2.1/image_processor.csprojAssemblyReference.cache
+/Users/csar/Documents/Holberton/holbertonschool-csharp/image_processor/obj/Debug/netcoreapp2.1/image_processor.csproj.CoreCompileInputs.cache
+/Users/csar/Documents/Holberton/holbertonschool-csharp/image_processor/obj/Debug/netcoreapp2.1/image_processor.AssemblyInfoInputs.cache
+/Users/csar/Documents/Holberton/holbertonschool-csharp/image_processor/obj/Debug/netcoreapp2.1/image_processor.AssemblyInfo.cs
+/Users/csar/Documents/Holberton/holbertonschool-csharp/image_processor/obj/Debug/netcoreapp2.1/image_processor.dll
+/Users/csar/Documents/Holberton/holbertonschool-csharp/image_processor/obj/Debug/netcoreapp2.1/image_processor.pdb
