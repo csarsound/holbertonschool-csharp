@@ -1,62 +1,62 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "dce79fed8859b64f7876872aa5200b292c72b0d0"
+    "signature": "b17bbfc8a57a4d6a74a74d6066877d3aa7693866"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {
       "ImageProcessor/1.0.0": {
         "dependencies": {
-          "System.Drawing.Common": "5.0.2"
+          "System.Drawing.Common": "4.7.0"
         },
         "runtime": {
           "ImageProcessor.dll": {}
         }
       },
-      "Microsoft.NETCore.Platforms/5.0.1": {},
-      "Microsoft.Win32.SystemEvents/5.0.0": {
+      "Microsoft.NETCore.Platforms/3.1.0": {},
+      "Microsoft.Win32.SystemEvents/4.7.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "5.0.1"
+          "Microsoft.NETCore.Platforms": "3.1.0"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.20.51904"
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.700.19.56404"
           }
         },
         "runtimeTargets": {
           "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll": {
             "rid": "win",
             "assetType": "runtime",
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.20.51904"
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.700.19.56404"
           }
         }
       },
-      "System.Drawing.Common/5.0.2": {
+      "System.Drawing.Common/4.7.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "5.0.1",
-          "Microsoft.Win32.SystemEvents": "5.0.0"
+          "Microsoft.NETCore.Platforms": "3.1.0",
+          "Microsoft.Win32.SystemEvents": "4.7.0"
         },
         "runtime": {
           "lib/netstandard2.0/System.Drawing.Common.dll": {
-            "assemblyVersion": "4.0.0.2",
-            "fileVersion": "4.6.29719.1"
+            "assemblyVersion": "4.0.0.1",
+            "fileVersion": "4.6.26919.2"
           }
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll": {
             "rid": "unix",
             "assetType": "runtime",
-            "assemblyVersion": "4.0.0.2",
-            "fileVersion": "4.6.29719.1"
+            "assemblyVersion": "4.0.0.1",
+            "fileVersion": "4.6.26919.2"
           },
           "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll": {
             "rid": "win",
             "assetType": "runtime",
-            "assemblyVersion": "4.0.0.2",
-            "fileVersion": "4.6.29719.1"
+            "assemblyVersion": "4.0.0.1",
+            "fileVersion": "4.6.26919.2"
           }
         }
       }
@@ -68,26 +68,26 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.NETCore.Platforms/5.0.1": {
+    "Microsoft.NETCore.Platforms/3.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-r+ib3P03nxW1KWzwzK1LwVTWSvvzKXtRvYQaQaTD2SYb942Rq+LHJkdt+YPSGU9Y5exFDUFMA97pIssR4NbV8Q==",
-      "path": "microsoft.netcore.platforms/5.0.1",
-      "hashPath": "microsoft.netcore.platforms.5.0.1.nupkg.sha512"
+      "sha512": "sha512-Y2oeN2j3gs7Rk7GOxhYWwSK1t1Y5W77D7egFsXLOYtstYxQH3uu6c78TYjRHm+SCTwJopX9S/0+NfTfUNwzZZg==",
+      "path": "microsoft.netcore.platforms/3.1.0",
+      "hashPath": "microsoft.netcore.platforms.3.1.0.nupkg.sha512"
     },
-    "Microsoft.Win32.SystemEvents/5.0.0": {
+    "Microsoft.Win32.SystemEvents/4.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-CO+T7OKiSxRKrRFvu/oB21PsZmHcE8FkkpHs/ct+AACdb/p7+erfrFElTvdByHFZhKHoOewDwX86bR4jjfyycQ==",
-      "path": "microsoft.win32.systemevents/5.0.0",
-      "hashPath": "microsoft.win32.systemevents.5.0.0.nupkg.sha512"
+      "sha512": "sha512-PclSEf1ZfL63uEmOedWMjcNzdn0SklLxhY8iP+kii+9WxN1I5hNpRYH9GX6MHsQo7IeIpFG5wkjiBzx2A8mU1A==",
+      "path": "microsoft.win32.systemevents/4.7.0",
+      "hashPath": "microsoft.win32.systemevents.4.7.0.nupkg.sha512"
     },
-    "System.Drawing.Common/5.0.2": {
+    "System.Drawing.Common/4.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4o6HILfZGJCERXGx4qiVjIAazBC7dOIQ+79IZsGNQTVhF2qLEQZifnYlfpx9lQnFVt6fuDj1I9ov5srnkFBcpQ==",
-      "path": "system.drawing.common/5.0.2",
-      "hashPath": "system.drawing.common.5.0.2.nupkg.sha512"
+      "sha512": "sha512-XKSPuWIvvpx8Uuk5Aoea9zDDVrsna2VXDXdPh4bFnXXmrZk84q9Hf5YRqOl5Z8Ejc6/QqMuKnx1uY1BdpL7TNA==",
+      "path": "system.drawing.common/4.7.0",
+      "hashPath": "system.drawing.common.4.7.0.nupkg.sha512"
     }
   }
 }

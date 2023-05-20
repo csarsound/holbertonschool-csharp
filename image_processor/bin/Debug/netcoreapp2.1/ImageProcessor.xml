@@ -4,5 +4,36 @@
         <name>ImageProcessor</name>
     </assembly>
     <members>
+        <member name="T:ImageProcessor">
+            <summary>
+            Class containing method on editing an image
+            </summary>
+        </member>
+        <member name="M:ImageProcessor.Inverse(System.String[])">
+            <summary>
+            Public class to invert an image
+            </summary>
+            <param name="filenames">List of image locations to edit</param>
+        </member>
+        <member name="M:ImageProcessor.Grayscale(System.String[])">
+            <summary>
+            Public class to turn an image into grayscale
+            </summary>
+            <param name="filenames">List of image locations to edit</param>
+        </member>
+        <member name="M:ImageProcessor.BlackWhite(System.String[],System.Double)">
+            <summary>
+            Public class to turn an image into black and white
+            </summary>
+            <param name="filenames">List of image locations to edit</param>
+            <param name="threshold">The limit for when something should be black vs white</param>
+        </member>
+        <member name="M:ImageProcessor.Thumbnail(System.String[],System.Int32)">
+            <summary>
+            Public class to turn an image into a thumbnail
+            </summary>
+            <param name="filenames">List of image locations to edit</param>
+            <param name="height">The new height of the thumbnail</param>
+        </member>
     </members>
 </doc>

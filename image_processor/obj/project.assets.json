@@ -175,7 +175,7 @@
           "Microsoft.NETCore.DotNetAppHost": "2.1.0"
         }
       },
-      "Microsoft.NETCore.Platforms/5.0.1": {
+      "Microsoft.NETCore.Platforms/3.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -193,10 +193,10 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.Win32.SystemEvents/5.0.0": {
+      "Microsoft.Win32.SystemEvents/4.7.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "5.0.0"
+          "Microsoft.NETCore.Platforms": "3.1.0"
         },
         "compile": {
           "ref/netstandard2.0/_._": {}
@@ -226,11 +226,11 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "System.Drawing.Common/5.0.2": {
+      "System.Drawing.Common/4.7.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "5.0.1",
-          "Microsoft.Win32.SystemEvents": "5.0.0"
+          "Microsoft.NETCore.Platforms": "3.1.0",
+          "Microsoft.Win32.SystemEvents": "4.7.0"
         },
         "compile": {
           "ref/netstandard2.0/System.Drawing.Common.dll": {}
@@ -556,17 +556,16 @@
         "runtime.json"
       ]
     },
-    "Microsoft.NETCore.Platforms/5.0.1": {
-      "sha512": "r+ib3P03nxW1KWzwzK1LwVTWSvvzKXtRvYQaQaTD2SYb942Rq+LHJkdt+YPSGU9Y5exFDUFMA97pIssR4NbV8Q==",
+    "Microsoft.NETCore.Platforms/3.1.0": {
+      "sha512": "Y2oeN2j3gs7Rk7GOxhYWwSK1t1Y5W77D7egFsXLOYtstYxQH3uu6c78TYjRHm+SCTwJopX9S/0+NfTfUNwzZZg==",
       "type": "package",
-      "path": "microsoft.netcore.platforms/5.0.1",
+      "path": "microsoft.netcore.platforms/3.1.0",
       "files": [
         ".signature.p7s",
-        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard1.0/_._",
-        "microsoft.netcore.platforms.5.0.1.nupkg.sha512",
+        "microsoft.netcore.platforms.3.1.0.nupkg.sha512",
         "microsoft.netcore.platforms.nuspec",
         "runtime.json",
         "useSharedDesignerContext.txt",
@@ -589,23 +588,24 @@
         "version.txt"
       ]
     },
-    "Microsoft.Win32.SystemEvents/5.0.0": {
-      "sha512": "CO+T7OKiSxRKrRFvu/oB21PsZmHcE8FkkpHs/ct+AACdb/p7+erfrFElTvdByHFZhKHoOewDwX86bR4jjfyycQ==",
+    "Microsoft.Win32.SystemEvents/4.7.0": {
+      "sha512": "PclSEf1ZfL63uEmOedWMjcNzdn0SklLxhY8iP+kii+9WxN1I5hNpRYH9GX6MHsQo7IeIpFG5wkjiBzx2A8mU1A==",
       "type": "package",
-      "path": "microsoft.win32.systemevents/5.0.0",
+      "path": "microsoft.win32.systemevents/4.7.0",
       "files": [
         ".signature.p7s",
-        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net461/Microsoft.Win32.SystemEvents.dll",
         "lib/net461/Microsoft.Win32.SystemEvents.xml",
         "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
         "lib/netstandard2.0/Microsoft.Win32.SystemEvents.xml",
-        "microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+        "microsoft.win32.systemevents.4.7.0.nupkg.sha512",
         "microsoft.win32.systemevents.nuspec",
         "ref/net461/Microsoft.Win32.SystemEvents.dll",
         "ref/net461/Microsoft.Win32.SystemEvents.xml",
+        "ref/net472/Microsoft.Win32.SystemEvents.dll",
+        "ref/net472/Microsoft.Win32.SystemEvents.xml",
         "ref/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
         "ref/netstandard2.0/Microsoft.Win32.SystemEvents.xml",
         "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll",
@@ -743,20 +743,17 @@
         "netstandard.library.nuspec"
       ]
     },
-    "System.Drawing.Common/5.0.2": {
-      "sha512": "4o6HILfZGJCERXGx4qiVjIAazBC7dOIQ+79IZsGNQTVhF2qLEQZifnYlfpx9lQnFVt6fuDj1I9ov5srnkFBcpQ==",
+    "System.Drawing.Common/4.7.0": {
+      "sha512": "XKSPuWIvvpx8Uuk5Aoea9zDDVrsna2VXDXdPh4bFnXXmrZk84q9Hf5YRqOl5Z8Ejc6/QqMuKnx1uY1BdpL7TNA==",
       "type": "package",
-      "path": "system.drawing.common/5.0.2",
+      "path": "system.drawing.common/4.7.0",
       "files": [
         ".signature.p7s",
-        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
         "lib/net461/System.Drawing.Common.dll",
-        "lib/netcoreapp3.0/System.Drawing.Common.dll",
-        "lib/netcoreapp3.0/System.Drawing.Common.xml",
         "lib/netstandard2.0/System.Drawing.Common.dll",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
@@ -778,7 +775,7 @@
         "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll",
         "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll",
         "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.xml",
-        "system.drawing.common.5.0.2.nupkg.sha512",
+        "system.drawing.common.4.7.0.nupkg.sha512",
         "system.drawing.common.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -788,7 +785,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.NETCore.App >= 2.1.0",
-      "System.Drawing.Common >= 5.0.2"
+      "System.Drawing.Common >= 4.7.0"
     ]
   },
   "packageFolders": {
@@ -837,7 +834,7 @@
           },
           "System.Drawing.Common": {
             "target": "Package",
-            "version": "[5.0.2, )"
+            "version": "[4.7.0, )"
           }
         },
         "imports": [
