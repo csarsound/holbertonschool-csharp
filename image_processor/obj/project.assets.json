@@ -861,9 +861,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/csar/Documents/Holberton/holbertonschool-csharp/image_processor/image_processor.csproj",
-      "projectName": "image_processor",
-      "projectPath": "/Users/csar/Documents/Holberton/holbertonschool-csharp/image_processor/image_processor.csproj",
+      "projectUniqueName": "/Users/csar/Documents/Holberton/holbertonschool-csharp/image_processor/ImageProcessor.csproj",
+      "projectName": "ImageProcessor",
+      "projectPath": "/Users/csar/Documents/Holberton/holbertonschool-csharp/image_processor/ImageProcessor.csproj",
       "packagesPath": "/Users/csar/.nuget/packages/",
       "outputPath": "/Users/csar/Documents/Holberton/holbertonschool-csharp/image_processor/obj/",
       "projectStyle": "PackageReference",

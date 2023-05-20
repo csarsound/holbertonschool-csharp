@@ -1,33 +1,59 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.IO;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.Runtime.InteropServices;
+using System.Threading.Tasks;
 
-///<summary>ImageProcessor class</summary>
-class ImageProcessor
+///<summary>Collection of methods for image manipulation</summary>
+public class ImageProcessor
 {
-    ///<summary>Method for inversing pixel color for images</summary>
+    ///<summary>inverts the colorscale of images</summary>
     public static void Inverse(string[] filenames)
     {
-        foreach (string file in filenames)
+        Parallel.ForEach (filenames, file => {
+            CreateInverse(file);
+        });
+    }
+
+    private static void CreateInverse(string file)
+    {
+        Bitmap bmp = new Bitmap(file);
+        BitmapData bitmapData = bmp.LockBits(new Rectangle(0, 0, bmp.Width, bmp.Height), ImageLockMode.ReadWrite, bmp.PixelFormat);
+
+        int bytesPerPixel = Bitmap.GetPixelFormatSize(bmp.PixelFormat) / 8;
+        int byteCount = bitmapData.Stride * bmp.Height;
+        byte[] pixels = new byte[byteCount];
+        IntPtr ptrFirstPixel = bitmapData.Scan0;
+        Marshal.Copy(ptrFirstPixel, pixels, 0, pixels.Length);
+        int heightInPixels = bitmapData.Height;
+        int widthInBytes = bitmapData.Width * bytesPerPixel;
+
+        for (int y = 0; y < heightInPixels; y++)
         {
-            Bitmap image1 = new Bitmap(file);
-
-            int x, y;
-
-            for(x = 0; x < image1.Width; x++)
+            int currentLine = y * bitmapData.Stride;
+            for (int x = 0; x < widthInBytes; x = x + bytesPerPixel)
             {
-                for(y = 0; y < image1.Height; y++)
-                {
-                    Color pixelColor = image1.GetPixel(x, y);
-                    Color newColor = Color.FromArgb(255 - pixelColor.R, 255 - pixelColor.G, 255 - pixelColor.B);
-                    image1.SetPixel(x, y, newColor);
-                }
+                int oldBlue = pixels[currentLine + x];
+                int oldGreen = pixels[currentLine + x + 1];
+                int oldRed = pixels[currentLine + x + 2];
+
+                // calculate new pixel value
+                pixels[currentLine + x] = (byte)(255 - oldBlue);
+                pixels[currentLine + x + 1] = (byte)(255 - oldGreen);
+                pixels[currentLine + x + 2] = (byte)(255 - oldRed);
             }
-            string name = file.Split("/")[1];
-            string[] newName = name.Split(".");
-            string concatFile = newName[0] + "_inverse." + newName[1];
-            image1.Save(concatFile);
         }
+ 
+        // copy modified bytes back
+        Marshal.Copy(pixels, 0, ptrFirstPixel, pixels.Length);
+        bmp.UnlockBits(bitmapData);
+
+        //create new file name
+        string name = string.Format("{0}_inverse{1}",
+                                    Path.GetFileNameWithoutExtension(file),
+                                    Path.GetExtension(file));
+        //save new image
+        bmp.Save(name);
     }
 }
