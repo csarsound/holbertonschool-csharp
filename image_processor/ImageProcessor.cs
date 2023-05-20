@@ -57,6 +57,14 @@ public class ImageProcessor
         bmp.Save(name);
     }
 
+        ///<summary>Recreates an image in grayscale</summary>
+    public static void Grayscale(string[] filenames)
+    {
+        Parallel.ForEach (filenames, file => {
+            CreateGrayscale(file);
+        });
+    }
+
       private static void CreateGrayscale(string file)
     {
         Bitmap bmp = new Bitmap(file);

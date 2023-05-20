@@ -10,5 +10,8 @@
         <member name="M:ImageProcessor.Inverse(System.String[])">
             <summary>inverts the colorscale of images</summary>
         </member>
+        <member name="M:ImageProcessor.Grayscale(System.String[])">
+            <summary>Recreates an image in grayscale</summary>
+        </member>
     </members>
 </doc>
