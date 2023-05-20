@@ -56,4 +56,46 @@ public class ImageProcessor
         //save new image
         bmp.Save(name);
     }
+
+      private static void CreateGrayscale(string file)
+    {
+        Bitmap bmp = new Bitmap(file);
+        BitmapData bitmapData = bmp.LockBits(new Rectangle(0, 0, bmp.Width, bmp.Height), ImageLockMode.ReadWrite, bmp.PixelFormat);
+
+        int bytesPerPixel = Bitmap.GetPixelFormatSize(bmp.PixelFormat) / 8;
+        int byteCount = bitmapData.Stride * bmp.Height;
+        byte[] pixels = new byte[byteCount];
+        IntPtr ptrFirstPixel = bitmapData.Scan0;
+        Marshal.Copy(ptrFirstPixel, pixels, 0, pixels.Length);
+        int heightInPixels = bitmapData.Height;
+        int widthInBytes = bitmapData.Width * bytesPerPixel;
+
+        for (int y = 0; y < heightInPixels; y++)
+        {
+            int currentLine = y * bitmapData.Stride;
+            for (int x = 0; x < widthInBytes; x = x + bytesPerPixel)
+            {
+                int oldBlue = pixels[currentLine + x];
+                int oldGreen = pixels[currentLine + x + 1];
+                int oldRed = pixels[currentLine + x + 2];
+
+                // calculate new pixel value
+                int avg = (oldBlue + oldGreen + oldRed) / 3;
+                pixels[currentLine + x] = (byte)avg;
+                pixels[currentLine + x + 1] = (byte)avg;
+                pixels[currentLine + x + 2] = (byte)avg;
+            }
+        }
+
+        // copy modified bytes back
+        Marshal.Copy(pixels, 0, ptrFirstPixel, pixels.Length);
+        bmp.UnlockBits(bitmapData);
+
+        //create new file name
+        string name = string.Format("{0}_grayscale{1}",
+                                    Path.GetFileNameWithoutExtension(file),
+                                    Path.GetExtension(file));
+        //save new image
+        bmp.Save(name);
+    }
 }
