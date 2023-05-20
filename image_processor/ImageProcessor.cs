@@ -160,4 +160,35 @@ public class ImageProcessor
         //save new image
         bmp.Save(name);
     }
+
+   ///<summary>Creates a thumbnail of an image at the specified height</summary>
+    public static void Thumbnail(string[] filenames, int height)
+    {
+        Parallel.ForEach (filenames, file => {
+            CreateThumbnail(file, height);
+        });
+    }
+
+    private static void CreateThumbnail(string file, int newHeight)
+    {
+        //read image
+        Bitmap bmp = new Bitmap(file);
+
+        //get image dimensions
+        int width = bmp.Width;
+        int height = bmp.Height;
+
+        //determine new width
+        int newWidth = (width * newHeight) / height;
+
+        //create new image
+        Image thumb = bmp.GetThumbnailImage(newWidth, newHeight, null, IntPtr.Zero);
+
+        //create new file name
+        string name = string.Format("{0}_th{1}",
+                                    Path.GetFileNameWithoutExtension(file),
+                                    Path.GetExtension(file));
+        //save new image
+        thumb.Save(name);
+    }
 }

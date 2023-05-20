@@ -16,5 +16,8 @@
         <member name="M:ImageProcessor.BlackWhite(System.String[],System.Double)">
             <summary>Reproduces image with only black and white pixels based on set threshold</summary>
         </member>
+        <member name="M:ImageProcessor.Thumbnail(System.String[],System.Int32)">
+            <summary>Creates a thumbnail of an image at the specified height</summary>
+        </member>
     </members>
 </doc>
