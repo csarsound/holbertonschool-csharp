@@ -13,5 +13,8 @@
         <member name="M:ImageProcessor.Grayscale(System.String[])">
             <summary>Recreates an image in grayscale</summary>
         </member>
+        <member name="M:ImageProcessor.BlackWhite(System.String[],System.Double)">
+            <summary>Reproduces image with only black and white pixels based on set threshold</summary>
+        </member>
     </members>
 </doc>
