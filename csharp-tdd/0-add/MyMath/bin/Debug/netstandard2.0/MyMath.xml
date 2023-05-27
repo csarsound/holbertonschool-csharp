@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyMath</name>
+    </assembly>
+    <members>
+        <member name="T:MyMath.Operations">
+            <summary>Represents Mathemathics operations class.</summary>
+        </member>
+        <member name="M:MyMath.Operations.Add(System.Int32,System.Int32)">
+            <summary> Makes a arithemetic operation (addition) </summary>
+            <param name="a">First integer for addition.</param>
+            <param name="b">Second integer for addition.</param>
+            <returns>Addition: a + b.</returns>
+        </member>
+    </members>
+</doc>
