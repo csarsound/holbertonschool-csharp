@@ -4223,11 +4223,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-tdd/0-add/MyMath.Tests/MyMath.Tests.csproj",
+      "projectUniqueName": "/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-tdd/1-divide/MyMath.Tests/MyMath.Tests.csproj",
       "projectName": "MyMath.Tests",
-      "projectPath": "/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-tdd/0-add/MyMath.Tests/MyMath.Tests.csproj",
+      "projectPath": "/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-tdd/1-divide/MyMath.Tests/MyMath.Tests.csproj",
       "packagesPath": "/Users/csar/.nuget/packages/",
-      "outputPath": "/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-tdd/0-add/MyMath.Tests/obj/",
+      "outputPath": "/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-tdd/1-divide/MyMath.Tests/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -4244,8 +4244,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-tdd/0-add/MyMath/MyMath.csproj": {
-              "projectPath": "/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-tdd/0-add/MyMath/MyMath.csproj"
+            "/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-tdd/1-divide/MyMath/MyMath.csproj": {
+              "projectPath": "/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-tdd/1-divide/MyMath/MyMath.csproj"
             }
           }
         }
