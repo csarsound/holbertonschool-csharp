@@ -1,130 +1,73 @@
 ﻿using System;
 using System.Drawing;
-using System.Threading;
+using System.IO;
+using System.Threading.Tasks;
 
-class ImageProcessor {
-    public static void Inverse(string[] filenames) {
-        Thread th = null;
+/// <summary>
+/// Provides methods for image processing operations.
+/// </summary>
+public class ImageProcessor
+{
+    /// <summary>
+    /// Inverts the colors of the specified images and saves the inverted versions.
+    /// </summary>
+    /// <param name="filenames">An array of image filenames to process.</param>
+    /// <remarks>
+    /// The output images will be saved in the same directory as the original images, using the following naming convention:
+    /// &lt;original_file_name&gt;_inverse.&lt;original_file_extension&gt;
+    /// The original images will not be overwritten.
+    /// </remarks>
+    public static void Inverse(string[] filenames)
+    {
+        string rootDirectory = AppDomain.CurrentDomain.BaseDirectory;
 
-        if (filenames.Length > 1) {
-            string[] tmp = new string[filenames.Length - 1];
-            Array.Copy(filenames, 1, tmp, 0, tmp.Length);
-            th = new Thread(() => Inverse(tmp));
-            th.Start();
-        }
+        foreach (string filename in filenames)
+        {
+            string originalFilePath = Path.Combine(rootDirectory, filename);
+            string outputFileName = GenerateOutputFileName(filename);
+            string outputFilePath = Path.Combine(rootDirectory, outputFileName);
 
-        if (filenames.Length > 0) {
-            string name = filenames[0];
-            Bitmap image = new Bitmap(name);
-
-            for (int y = 0; y < image.Height; y++) {
-                for (int x = 0; x < image.Width; x++) {
-                    Color pixel = image.GetPixel(x, y);
-                    image.SetPixel(x, y, Color.FromArgb(pixel.A, 255 - pixel.R, 255 - pixel.G, 255 - pixel.B));
+            Task.Run(() =>
+            {
+                using (Image originalImage = Image.FromFile(originalFilePath))
+                {
+                    Bitmap invertedImage = InvertImageColors((Bitmap)originalImage);
+                    invertedImage.Save(outputFilePath);
                 }
-            }
-
-            int lastSlash = name.LastIndexOf('/') + 1;
-            int lastDot = name.LastIndexOf('.');
-            image.Save(name.Substring(lastSlash, lastDot - lastSlash) + "_inverse" + name.Substring(lastDot));
+            });
         }
 
-        if (filenames.Length > 1) {
-            th.Join();
-        }
+        Task.WaitAll();
     }
 
-    public static void Grayscale(string[] filenames) {
-        Thread th = null;
+    private static Bitmap InvertImageColors(Bitmap originalImage)
+    {
+        Bitmap invertedImage = new Bitmap(originalImage.Width, originalImage.Height);
 
-        if (filenames.Length > 1) {
-            string[] tmp = new string[filenames.Length - 1];
-            Array.Copy(filenames, 1, tmp, 0, tmp.Length);
-            th = new Thread(() => Grayscale(tmp));
-            th.Start();
-        }
+        for (int y = 0; y < originalImage.Height; y++)
+        {
+            for (int x = 0; x < originalImage.Width; x++)
+            {
+                Color pixelColor = originalImage.GetPixel(x, y);
 
-        if (filenames.Length > 0) {
-            string name = filenames[0];
-            Bitmap image = new Bitmap(name);
+                Color invertedColor = Color.FromArgb(
+                    255 - pixelColor.R,
+                    255 - pixelColor.G,
+                    255 - pixelColor.B);
 
-            for (int y = 0; y < image.Height; y++) {
-                for (int x = 0; x < image.Width; x++) {
-                    Color pixel = image.GetPixel(x, y);
-                    int luminance = (int)(0.299 * pixel.R + 0.587 * pixel.G + 0.114 * pixel.B);
-                    image.SetPixel(x, y, Color.FromArgb(pixel.A, luminance, luminance, luminance));
-                }
+                invertedImage.SetPixel(x, y, invertedColor);
             }
-
-            int lastSlash = name.LastIndexOf('/') + 1;
-            int lastDot = name.LastIndexOf('.');
-            image.Save(name.Substring(lastSlash, lastDot - lastSlash) + "_grayscale" + name.Substring(lastDot));
         }
 
-        if (filenames.Length > 1) {
-            th.Join();
-        }
+        return invertedImage;
     }
 
-    public static void BlackWhite(string[] filenames, double threshold) {
-        Thread th = null;
+    private static string GenerateOutputFileName(string originalFileName)
+    {
+        string fileName = Path.GetFileNameWithoutExtension(originalFileName);
+        string extension = Path.GetExtension(originalFileName);
 
-        if (filenames.Length > 1) {
-            string[] tmp = new string[filenames.Length - 1];
-            Array.Copy(filenames, 1, tmp, 0, tmp.Length);
-            th = new Thread(() => BlackWhite(tmp, threshold));
-            th.Start();
-        }
-
-        if (filenames.Length > 0) {
-            string name = filenames[0];
-            Bitmap image = new Bitmap(name);
-
-            for (int y = 0; y < image.Height; y++) {
-                for (int x = 0; x < image.Width; x++) {
-                    Color pixel = image.GetPixel(x, y);
-                    int luminance = (int)(0.299 * pixel.R + 0.587 * pixel.G + 0.114 * pixel.B);
-                    if (luminance >= threshold * 255) {
-                        image.SetPixel(x, y, Color.FromArgb(pixel.A, 255, 255, 255));
-                    } else {
-                        image.SetPixel(x, y, Color.FromArgb(pixel.A, 0, 0, 0));
-                    }
-                }
-            }
-
-            int lastSlash = name.LastIndexOf('/') + 1;
-            int lastDot = name.LastIndexOf('.');
-            image.Save(name.Substring(lastSlash, lastDot - lastSlash) + "_bw" + name.Substring(lastDot));
-        }
-
-        if (filenames.Length > 1) {
-            th.Join();
-        }
-    }
-
-    public static void Thumbnail(string[] filenames, int height) {
-        Thread th = null;
-
-        if (filenames.Length > 1) {
-            string[] tmp = new string[filenames.Length - 1];
-            Array.Copy(filenames, 1, tmp, 0, tmp.Length);
-            th = new Thread(() => Thumbnail(tmp, height));
-            th.Start();
-        }
-
-        if (filenames.Length > 0) {
-            string name = filenames[0];
-            Bitmap bmp = new Bitmap(name);
-
-            Image image = bmp.GetThumbnailImage((int)(bmp.Width * (double)((double)height / (double)bmp.Height)), height, () => {return false;}, IntPtr.Zero);
-
-            int lastSlash = name.LastIndexOf('/') + 1;
-            int lastDot = name.LastIndexOf('.');
-            image.Save(name.Substring(lastSlash, lastDot - lastSlash) + "_th" + name.Substring(lastDot));
-        }
-
-        if (filenames.Length > 1) {
-            th.Join();
-        }
+        string outputFileName = $"{fileName}_inverse{extension}";
+        return outputFileName;
     }
 }

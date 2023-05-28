@@ -4,5 +4,21 @@
         <name>ImageProcessor</name>
     </assembly>
     <members>
+        <member name="T:ImageProcessor">
+            <summary>
+            Provides methods for image processing operations.
+            </summary>
+        </member>
+        <member name="M:ImageProcessor.Inverse(System.String[])">
+            <summary>
+            Inverts the colors of the specified images and saves the inverted versions.
+            </summary>
+            <param name="filenames">An array of image filenames to process.</param>
+            <remarks>
+            The output images will be saved in the same directory as the original images, using the following naming convention:
+            &lt;original_file_name&gt;_inverse.&lt;original_file_extension&gt;
+            The original images will not be overwritten.
+            </remarks>
+        </member>
     </members>
 </doc>
