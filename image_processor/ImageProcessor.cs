@@ -2,153 +2,194 @@
 using System.IO;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 
-/// <summary>
-/// Class containing method on editing an image
-/// </summary>
-class ImageProcessor
+///<summary>Collection of methods for image manipulation</summary>
+public class ImageProcessor
 {
-    /// <summary>
-    /// Public class to invert an image
-    /// </summary>
-    /// <param name="filenames">List of image locations to edit</param>
+    ///<summary>inverts the colorscale of images</summary>
     public static void Inverse(string[] filenames)
     {
-        Parallel.ForEach(filenames, filename =>
-        {
-            string file = Path.GetFileNameWithoutExtension(filename);
-            string extension = Path.GetExtension(filename);
-
-            Bitmap inverted = new Bitmap(filename);
-
-            Rectangle rect = new Rectangle(0, 0, inverted.Width, inverted.Height);
-            BitmapData invertedData =
-                inverted.LockBits(rect, ImageLockMode.ReadWrite,
-                inverted.PixelFormat);
-
-            IntPtr ptr = invertedData.Scan0;
-
-            int bytes = Math.Abs(invertedData.Stride) * inverted.Height;
-            byte[] rgbValues = new byte[bytes];
-
-            System.Runtime.InteropServices.Marshal.Copy(ptr, rgbValues, 0, bytes);
-
-            for (int i = 0; i < rgbValues.Length; i++)
-                rgbValues[i] = (byte)(255 - rgbValues[i]);
-
-            System.Runtime.InteropServices.Marshal.Copy(rgbValues, 0, ptr, bytes);
-
-            inverted.UnlockBits(invertedData);
-
-            inverted.Save(file + "_inverse" + extension);
-        }
-        );
+        Parallel.ForEach (filenames, file => {
+            CreateInverse(file);
+        });
     }
 
-    /// <summary>
-    /// Public class to turn an image into grayscale
-    /// </summary>
-    /// <param name="filenames">List of image locations to edit</param>
+    private static void CreateInverse(string file)
+    {
+        Bitmap bmp = new Bitmap(file);
+        BitmapData bitmapData = bmp.LockBits(new Rectangle(0, 0, bmp.Width, bmp.Height), ImageLockMode.ReadWrite, bmp.PixelFormat);
+
+        int bytesPerPixel = Bitmap.GetPixelFormatSize(bmp.PixelFormat) / 8;
+        int byteCount = bitmapData.Stride * bmp.Height;
+        byte[] pixels = new byte[byteCount];
+        IntPtr ptrFirstPixel = bitmapData.Scan0;
+        Marshal.Copy(ptrFirstPixel, pixels, 0, pixels.Length);
+        int heightInPixels = bitmapData.Height;
+        int widthInBytes = bitmapData.Width * bytesPerPixel;
+
+        for (int y = 0; y < heightInPixels; y++)
+        {
+            int currentLine = y * bitmapData.Stride;
+            for (int x = 0; x < widthInBytes; x = x + bytesPerPixel)
+            {
+                int oldBlue = pixels[currentLine + x];
+                int oldGreen = pixels[currentLine + x + 1];
+                int oldRed = pixels[currentLine + x + 2];
+
+                // calculate new pixel value
+                pixels[currentLine + x] = (byte)(255 - oldBlue);
+                pixels[currentLine + x + 1] = (byte)(255 - oldGreen);
+                pixels[currentLine + x + 2] = (byte)(255 - oldRed);
+            }
+        }
+ 
+        // copy modified bytes back
+        Marshal.Copy(pixels, 0, ptrFirstPixel, pixels.Length);
+        bmp.UnlockBits(bitmapData);
+
+        //create new file name
+        string name = string.Format("{0}_inverse{1}",
+                                    Path.GetFileNameWithoutExtension(file),
+                                    Path.GetExtension(file));
+        //save new image
+        bmp.Save(name);
+    }
+
+    ///<summary>Recreates an image in grayscale</summary>
     public static void Grayscale(string[] filenames)
     {
-        Parallel.ForEach(filenames, filename =>
-        {
-            string file = Path.GetFileNameWithoutExtension(filename);
-            string extension = Path.GetExtension(filename);
-
-            Bitmap grayscale = new Bitmap(filename);
-
-            Rectangle rect = new Rectangle(0, 0, grayscale.Width, grayscale.Height);
-            BitmapData grayscaleData =
-                grayscale.LockBits(rect, ImageLockMode.ReadWrite,
-                grayscale.PixelFormat);
-
-            IntPtr ptr = grayscaleData.Scan0;
-
-            int bytes = Math.Abs(grayscaleData.Stride) * grayscale.Height;
-            byte[] rgbValues = new byte[bytes];
-
-            System.Runtime.InteropServices.Marshal.Copy(ptr, rgbValues, 0, bytes);
-
-            for (int i = 0; i < rgbValues.Length - 3; i += 3)
-            {
-                byte gray = (byte)(rgbValues[i] * .21 + rgbValues[i + 1] * .71 + rgbValues[i + 2] * .071);
-                rgbValues[i] = rgbValues[i + 1] = rgbValues[i + 2] = gray;
-            }
-
-            System.Runtime.InteropServices.Marshal.Copy(rgbValues, 0, ptr, bytes);
-
-            grayscale.UnlockBits(grayscaleData);
-
-            grayscale.Save(file + "_grayscale" + extension);
-        }
-        );
+        Parallel.ForEach (filenames, file => {
+            CreateGrayscale(file);
+        });
     }
 
-    /// <summary>
-    /// Public class to turn an image into black and white
-    /// </summary>
-    /// <param name="filenames">List of image locations to edit</param>
-    /// <param name="threshold">The limit for when something should be black vs white</param>
+    private static void CreateGrayscale(string file)
+    {
+        Bitmap bmp = new Bitmap(file);
+        BitmapData bitmapData = bmp.LockBits(new Rectangle(0, 0, bmp.Width, bmp.Height), ImageLockMode.ReadWrite, bmp.PixelFormat);
+
+        int bytesPerPixel = Bitmap.GetPixelFormatSize(bmp.PixelFormat) / 8;
+        int byteCount = bitmapData.Stride * bmp.Height;
+        byte[] pixels = new byte[byteCount];
+        IntPtr ptrFirstPixel = bitmapData.Scan0;
+        Marshal.Copy(ptrFirstPixel, pixels, 0, pixels.Length);
+        int heightInPixels = bitmapData.Height;
+        int widthInBytes = bitmapData.Width * bytesPerPixel;
+
+        for (int y = 0; y < heightInPixels; y++)
+        {
+            int currentLine = y * bitmapData.Stride;
+            for (int x = 0; x < widthInBytes; x = x + bytesPerPixel)
+            {
+                int oldBlue = pixels[currentLine + x];
+                int oldGreen = pixels[currentLine + x + 1];
+                int oldRed = pixels[currentLine + x + 2];
+
+                // calculate new pixel value
+                int avg = (oldBlue + oldGreen + oldRed) / 3;
+                pixels[currentLine + x] = (byte)avg;
+                pixels[currentLine + x + 1] = (byte)avg;
+                pixels[currentLine + x + 2] = (byte)avg;
+            }
+        }
+ 
+        // copy modified bytes back
+        Marshal.Copy(pixels, 0, ptrFirstPixel, pixels.Length);
+        bmp.UnlockBits(bitmapData);
+
+        //create new file name
+        string name = string.Format("{0}_grayscale{1}",
+                                    Path.GetFileNameWithoutExtension(file),
+                                    Path.GetExtension(file));
+        //save new image
+        bmp.Save(name);
+    }
+
+    ///<summary>Reproduces image with only black and white pixels based on set threshold</summary>
     public static void BlackWhite(string[] filenames, double threshold)
     {
-        Parallel.ForEach(filenames, filename =>
+        Parallel.ForEach (filenames, file => {
+            CreateBlackWhite(file, threshold);
+        });
+    }
+    
+    private static void CreateBlackWhite(string file, double threshold)
+    {
+        Bitmap bmp = new Bitmap(file);
+        BitmapData bitmapData = bmp.LockBits(new Rectangle(0, 0, bmp.Width, bmp.Height), ImageLockMode.ReadWrite, bmp.PixelFormat);
+
+        int bytesPerPixel = Bitmap.GetPixelFormatSize(bmp.PixelFormat) / 8;
+        int byteCount = bitmapData.Stride * bmp.Height;
+        byte[] pixels = new byte[byteCount];
+        IntPtr ptrFirstPixel = bitmapData.Scan0;
+        Marshal.Copy(ptrFirstPixel, pixels, 0, pixels.Length);
+        int heightInPixels = bitmapData.Height;
+        int widthInBytes = bitmapData.Width * bytesPerPixel;
+
+        for (int y = 0; y < heightInPixels; y++)
         {
-            string file = Path.GetFileNameWithoutExtension(filename);
-            string extension = Path.GetExtension(filename);
-
-            Bitmap blackwhite = new Bitmap(filename);
-
-            Rectangle rect = new Rectangle(0, 0, blackwhite.Width, blackwhite.Height);
-            BitmapData blackwhiteData =
-                blackwhite.LockBits(rect, ImageLockMode.ReadWrite,
-                blackwhite.PixelFormat);
-
-            IntPtr ptr = blackwhiteData.Scan0;
-
-            int bytes = Math.Abs(blackwhiteData.Stride) * blackwhite.Height;
-            byte[] rgbValues = new byte[bytes];
-
-            System.Runtime.InteropServices.Marshal.Copy(ptr, rgbValues, 0, bytes);
-
-            for (int i = 0; i < rgbValues.Length - 3; i += 3)
+            int currentLine = y * bitmapData.Stride;
+            for (int x = 0; x < widthInBytes; x = x + bytesPerPixel)
             {
-                if (rgbValues[i] + rgbValues[i + 1] + rgbValues[i + 2] > threshold)
-                    rgbValues[i] = rgbValues[i + 1] = rgbValues[i + 2] = 255;
+                int oldBlue = pixels[currentLine + x];
+                int oldGreen = pixels[currentLine + x + 1];
+                int oldRed = pixels[currentLine + x + 2];
+
+                // calculate new pixel value
+                int avg = (oldBlue + oldGreen + oldRed) / 3;
+                if ((double)avg > threshold)
+                    avg = 255;
                 else
-                    rgbValues[i] = rgbValues[i + 1] = rgbValues[i + 2] = 0;
+                    avg = 0;
+                pixels[currentLine + x] = (byte)avg;
+                pixels[currentLine + x + 1] = (byte)avg;
+                pixels[currentLine + x + 2] = (byte)avg;
             }
-
-            System.Runtime.InteropServices.Marshal.Copy(rgbValues, 0, ptr, bytes);
-
-            blackwhite.UnlockBits(blackwhiteData);
-
-            blackwhite.Save(file + "_bw" + extension);
         }
-        );
+ 
+        // copy modified bytes back
+        Marshal.Copy(pixels, 0, ptrFirstPixel, pixels.Length);
+        bmp.UnlockBits(bitmapData);
+
+        //create new file name
+        string name = string.Format("{0}_bw{1}",
+                                    Path.GetFileNameWithoutExtension(file),
+                                    Path.GetExtension(file));
+        //save new image
+        bmp.Save(name);
     }
 
-    /// <summary>
-    /// Public class to turn an image into a thumbnail
-    /// </summary>
-    /// <param name="filenames">List of image locations to edit</param>
-    /// <param name="height">The new height of the thumbnail</param>
+
+    ///<summary>Creates a thumbnail of an image at the specified height</summary>
     public static void Thumbnail(string[] filenames, int height)
     {
-        Parallel.ForEach(filenames, filename =>
-        {
-            string file = Path.GetFileNameWithoutExtension(filename);
-            string extension = Path.GetExtension(filename);
+        Parallel.ForEach (filenames, file => {
+            CreateThumbnail(file, height);
+        });
+    }
 
-            Bitmap original = new Bitmap(filename);
+    private static void CreateThumbnail(string file, int newHeight)
+    {
+        //read image
+        Bitmap bmp = new Bitmap(file);
 
-            int width = (height * original.Width) / original.Height;
+        //get image dimensions
+        int width = bmp.Width;
+        int height = bmp.Height;
 
-            Image thumbnail = original.GetThumbnailImage(width, height, null, IntPtr.Zero);
+        //determine new width
+        int newWidth = (width * newHeight) / height;
 
-            thumbnail.Save(file + "_th" + extension);
-        }
-        );
+        //create new image
+        Image thumb = bmp.GetThumbnailImage(newWidth, newHeight, null, IntPtr.Zero);
+
+        //create new file name
+        string name = string.Format("{0}_th{1}",
+                                    Path.GetFileNameWithoutExtension(file),
+                                    Path.GetExtension(file));
+        //save new image
+        thumb.Save(name);
     }
 }
