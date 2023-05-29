@@ -4,38 +4,5 @@
         <name>ImageProcessor</name>
     </assembly>
     <members>
-        <member name="T:ImageProcessor">
-            <summary>
-            Provides methods to perfrom various image processing techniques.
-            </summary>
-        </member>
-        <member name="M:ImageProcessor.Thumbnail(System.String[],System.Int32)">
-            <summary>
-            Converts a list of image(s) to thumbnails of given height. 
-            </summary>
-            <param name="filenames">List of images to convert.</param>
-            <param name="height">Target height of thumbnail.</param>
-        </member>
-        <member name="M:ImageProcessor.BlackWhite(System.String[],System.Double)">
-            <summary>
-            Converts a list of image(s) to black and white.
-            </summary>
-            <param name="filenames">A list of images to invert.</param>
-            <param name="threshold">
-            A threshold for determining whether a pixel should go black or white.
-            </param>
-        </member>
-        <member name="M:ImageProcessor.Grayscale(System.String[])">
-            <summary>
-            Converts a list of image(s) to grayscale.
-            </summary>
-            <param name="filenames">A list of images to invert.</param>
-        </member>
-        <member name="M:ImageProcessor.Inverse(System.String[])">
-            <summary>
-            Inverts a list of image(s).
-            </summary>
-            <param name="filenames">A list of images to invert.</param>
-        </member>
     </members>
 </doc>
