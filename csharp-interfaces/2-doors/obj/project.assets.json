@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-interfaces/0-abstract_thinking/0-abstract_thinking.csproj",
-      "projectName": "0-abstract_thinking",
-      "projectPath": "/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-interfaces/0-abstract_thinking/0-abstract_thinking.csproj",
+      "projectUniqueName": "/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-interfaces/2-doors,/2-doors,.csproj",
+      "projectName": "2-doors,",
+      "projectPath": "/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-interfaces/2-doors,/2-doors,.csproj",
       "packagesPath": "/Users/csar/.nuget/packages/",
-      "outputPath": "/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-interfaces/0-abstract_thinking/obj/",
+      "outputPath": "/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-interfaces/2-doors,/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
