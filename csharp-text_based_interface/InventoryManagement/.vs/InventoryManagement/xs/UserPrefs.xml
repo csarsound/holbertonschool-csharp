@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{142E8273-2EC5-4A77-B443-78EF041AB9E9}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="InventoryLibrary/MyClass.cs">
+    <Files>
+      <File FileName="InventoryLibrary/MyClass.cs" Line="9" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="InventoryManagement" expanded="True">
+            <Node name="InventoryLibrary" expanded="True">
+              <Node name="MyClass.cs" selected="True" />
+            </Node>
+            <Node name="InventoryManagement" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.InventoryLibrary FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
+  <MonoDevelop.Ide.ItemProperties.InventoryManagement FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
