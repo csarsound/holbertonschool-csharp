@@ -1,0 +1,2 @@
+/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-text_based_interface/obj/Debug/InventoryManagement.csproj.AssemblyReference.cache
+/Users/csar/Documents/Holberton/holbertonschool-csharp/csharp-text_based_interface/obj/Debug/InventoryManagement.csproj.CoreCompileInputs.cache
