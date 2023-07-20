@@ -7,9 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryManagement", "Inve
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryLibrary", "InventoryLibrary\InventoryLibrary.csproj", "{5C499E09-4CEA-42B0-A5C3-9510C36C5326}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryManager", "InventoryManager\InventoryManager.csproj", "{B6281701-BB19-4F77-96FF-ACFF141C93F8}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryManagement.Tests", "InventoryManagement.Tests\InventoryManagement.Tests.csproj", "{96CA3BD7-E29F-42E6-8CDF-5E50084F504D}"
+EndProject
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "InventoryManager", "InventoryManager\InventoryManager.csproj", "{DA7903BB-F2D3-470F-8FD5-F9C93F615364}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryManagement.Tests", "InventoryManagement.Tests\InventoryManagement.Tests.csproj", "{83904A5D-E8F5-44E5-9049-A5DF159DF062}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +27,18 @@ Global
 		{5C499E09-4CEA-42B0-A5C3-9510C36C5326}.Debug|anycpu.Build.0 = Debug|Any CPU
 		{5C499E09-4CEA-42B0-A5C3-9510C36C5326}.Release|anycpu.ActiveCfg = Release|Any CPU
 		{5C499E09-4CEA-42B0-A5C3-9510C36C5326}.Release|anycpu.Build.0 = Release|Any CPU
-		{B6281701-BB19-4F77-96FF-ACFF141C93F8}.Debug|anycpu.ActiveCfg = Debug|anycpu
-		{B6281701-BB19-4F77-96FF-ACFF141C93F8}.Debug|anycpu.Build.0 = Debug|anycpu
-		{B6281701-BB19-4F77-96FF-ACFF141C93F8}.Release|anycpu.ActiveCfg = Release|anycpu
-		{B6281701-BB19-4F77-96FF-ACFF141C93F8}.Release|anycpu.Build.0 = Release|anycpu
 		{96CA3BD7-E29F-42E6-8CDF-5E50084F504D}.Debug|anycpu.ActiveCfg = Debug|Any CPU
 		{96CA3BD7-E29F-42E6-8CDF-5E50084F504D}.Debug|anycpu.Build.0 = Debug|Any CPU
 		{96CA3BD7-E29F-42E6-8CDF-5E50084F504D}.Release|anycpu.ActiveCfg = Release|Any CPU
 		{96CA3BD7-E29F-42E6-8CDF-5E50084F504D}.Release|anycpu.Build.0 = Release|Any CPU
+		{DA7903BB-F2D3-470F-8FD5-F9C93F615364}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{DA7903BB-F2D3-470F-8FD5-F9C93F615364}.Debug|anycpu.Build.0 = Debug|anycpu
+		{DA7903BB-F2D3-470F-8FD5-F9C93F615364}.Release|anycpu.ActiveCfg = Release|anycpu
+		{DA7903BB-F2D3-470F-8FD5-F9C93F615364}.Release|anycpu.Build.0 = Release|anycpu
+		{83904A5D-E8F5-44E5-9049-A5DF159DF062}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{83904A5D-E8F5-44E5-9049-A5DF159DF062}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{83904A5D-E8F5-44E5-9049-A5DF159DF062}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{83904A5D-E8F5-44E5-9049-A5DF159DF062}.Release|anycpu.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
