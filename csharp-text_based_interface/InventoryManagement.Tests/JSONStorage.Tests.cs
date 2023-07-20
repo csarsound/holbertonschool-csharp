@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace InventoryManagement.Tests
 {
     [TestFixture]
-    public class JSONStorageTests
+    public class JSONStorage_Tests
     {
         private JSONStorage storage;
 
