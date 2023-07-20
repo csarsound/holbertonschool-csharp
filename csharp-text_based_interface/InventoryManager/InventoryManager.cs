@@ -2,9 +2,9 @@
 
 namespace InventoryManager
 {
-    class Program
+    public class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             JSONStorage storage = new JSONStorage();
             storage.Cargar();
